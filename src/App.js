@@ -2,8 +2,8 @@
 import Tempapp from './components/Tempapp';  
 function App() {
   return (
-    <div className="App">
-      <Tempapp/>
+    <div className="App" style={{justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+      <Tempapp />
     </div>
   );
 }

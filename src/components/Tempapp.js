@@ -15,8 +15,8 @@ import'./card.css';
     },[search])
   return (
     <div> 
-    <div className='box container'>
-        <div className='inputData '>
+    <div className='box container' >
+        <div className='inputData' >
            <input type='search' value={search} className='inputFeild'
            onChange={(event) =>{setSearch(event.target.value)}}/>
             </div>
