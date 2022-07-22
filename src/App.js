@@ -1,8 +1,8 @@
- import React from 'react';
-import Tempapp from './components/Tempapp';  
+import React from 'react';
+import Tempapp from './components/Tempapp';
 function App() {
   return (
-    <div className="App" style={{justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+    <div className="App" >
       <Tempapp />
     </div>
   );
