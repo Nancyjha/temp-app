@@ -5,6 +5,9 @@
     font-family: 'Edu NSW ACT Foundation', cursive;
 
     }
+    .inputData{
+       color: aquamarine;
+    }
     .container {
     width: 100%;
     position: absolute;
@@ -12,13 +15,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     }
+  
     .box {
     width: 300px;
-    height: 60vh;
+    height: 67vh;
     background-color: #a5bbdd;
     margin: auto;
     border-radius: 10px;
-    box-shadow: 5px 5px 25px -5px rgba(1, 9, 92, 0.5);
+    box-shadow: 5px 5px 25px -5px rgba(67, 68, 77, 0.5);
     overflow: hidden;
     }
     .inputData {
@@ -37,7 +41,7 @@
      margin: auto;
     }
     .info {
-    margin-top: 20%;
+    margin-left: 15%;
     }
     .info .temp {
     font-size: 30px;

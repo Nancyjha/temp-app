@@ -2,25 +2,30 @@ import React, {useEffect, useState} from 'react';
 import'./card.css';
  const Tempapp=() =>{
     const[city, setCity] = useState(null);
-    const[search, setSearch] = useState('');
+    const[search, setSearch] = useState('Enter City Name');
 
     useEffect(()=>{
+      if(search!=='' || search !=="Enter City Name"){
         const fetchApi = async ()=>{
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=4150e743513178886bb994e416d3259c`
             const response = await fetch(url);
             const resJson = await response.json();
             setCity(resJson.main);
+           
         };
         fetchApi();
+      }
     },[search])
   return (
     <div> 
     <div className='box container' >
         <div className='inputData' >
            <input type='search' value={search} className='inputFeild'
-           onChange={(event) =>{setSearch(event.target.value)}}/>
+           onChange={(event) =>{setSearch(event.target.value)}}
+           onClick={() =>{setSearch("")}} />
+            
             </div>
-            {!city?(''):(
+            {!city?(<></>):(
             <div className='info '>
                 <h5 className='location'>
                 <i className="fa-solid fa-street-view"> <strong>{search}</strong> </i>
